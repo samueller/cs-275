@@ -17,21 +17,24 @@
         <div style="padding-bottom: 5%;">
             <section class="abstract">Abstract</section>
             <p style="padding-top: 2%;">
-                This project furthers the research about symbiosis and evolution in Game of Life conducted by Dr. Peter Turney [8, 9, 10]. Turney's impressive work uses a variant of Conway’s Game of Life called Immigration Game. In this environment the fitness of organisms can be tested. These organisms are sets of live cells adhering to the simple rules of Game of Life. Each organism starts from a seed configuration of cells. Think of seeds as analogous to genomes. Turney can then determine fitness by placing a pair of seeds in a game to compete against each other.
+                This project furthers the research about symbiosis and evolution in Game of Life conducted by Dr. Peter Turney [17, 18, 19]. Turney's impressive work uses a variant of Conway’s Game of Life called Immigration Game. In this environment the fitness of organisms can be tested. These organisms are sets of live cells adhering to the simple rules of Game of Life. Each organism starts from a seed configuration of cells. Think of seeds as analogous to genomes. Turney can then determine fitness by placing a pair of seeds in a game to compete against each other.
 </p><p>
                 The hope is that seeds evolve through reproduction and evolution by natural selection, just as in biological organisms, to a point where life as we know it emerges. Turney’s simulations demonstrate that evolution can be promoted through symbiosis by joining organisms for mutual benefit. However, it is unknown how far this evolution will go and whether even basic life can emerge. Is evolution unbounded with the reproductive mechanisms and symbiosis that Turney has devised? Far more generations must be computed to determine this. Unfortunately, further generations require too much computational power.
             </p><p>
-                In this paper, we introduce a new platform for deriving life from Game of Life. Extending Turney's work, <a href="https://derive.life">Derive Life</a> is built from scratch in JavaScript. This allows researchers, students, and enthusiasts to easily experiment, modify, and extend evolution through cellular automata. Performance is good, with plenty of opportunity for improvement.
+                This paper introduces a new platform for deriving life from Game of Life. Extending Turney's work, <a href="https://derive.life">Derive Life</a> is built from scratch in JavaScript. This allows researchers, students, and enthusiasts to easily experiment, modify, and extend evolution through cellular automata. Performance is good, with plenty of opportunity for improvement.
             </p><p>            
                 Additionally, we have created a new variant on the Immigration Game in order to accommodate micro-communities. If unbounded evolution is to be fostered, some mechanism needs to be in place to allow for the most basic communities. After all, biological life evolved through communities.
             </p>
             <h3><a href="https://derive.life">Derive.life web application</a></h3>
             <div style="position: relative; top: -22px">(read <em>How to Play</em> in report)</div>
-            <img style="min-width: 400px; width: 50%;" src="quad-community_with_sidebar_2.png">
+            <img style="min-width: 400px; width: 70%;" src="quad-community_with_sidebar.png">
             <p></p>
-            <p><a href="">Video of </a></p>
+            <p><a href="videos/12_threads.mp4">Video of Quad-Community evolving with full utilization of 12 concurrent threads</a></p>
+            <p><a href="videos/gliders.mov">Video of gliders spontaneously spawning even in an early generation</a></p>
+            <p><a href="videos/dwindle_then_explode.mov">Video of yellow seed dwindling down to small pocket of cells and then exploding to win competition</a></p>
+            <p><a href="videos/dwindle_then_explode_2.mov">Video of blue seed employing the same strategy of dwindle → explode to win competition</a></p>
             <p><a href="videos">Videos folder</a></p>
-            <p><a href="src">Source code folder</a></p>
+            <p><a href="src">Source code folder</a>. Interesting code will be in <code>lib/game/quad_life.js</code>, <code>public/runs_thread.js</code>, and <code>public/score_quad.js</code>. Svelte files in <code>components/</code> and <code>routes/</code> just produce the HTML page. Code is also available on GitHub at <a href="https://github.com/samueller/derive-life">https://github.com/samueller/derive-life</a>.</p>
             <p><a href="report.pdf">Project report</a></p>
             <p><a href="https://derive.life">Derive.life web application</p>
         </div>
